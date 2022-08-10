@@ -16,3 +16,4 @@ wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/syncd
 sleep 10 && /usr/bin/syncdate-hp
 
 - pastikan command diatas di letakkan di atas tulisan exit 0
+- command diatas berfungsi saat openwrt setelah hidup agar waktu langsung sinkron
