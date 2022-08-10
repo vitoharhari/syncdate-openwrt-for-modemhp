@@ -1,0 +1,51 @@
+#!/bin/bash
+adb shell date > /root/hasildate
+
+hari=$(cat /root/hasildate | cut -b 9-10)
+bulan=$(cat /root/hasildate | cut -b 5-7)
+tahun=$(cat /root/hasildate | cut -b 25-28)
+waktu=$(cat /root/hasildate | cut -b 12-19)
+
+    case $bulan in
+        "Jan")
+            bulan="01"
+            ;;
+        "Feb")
+            bulan="02"
+            ;;
+        "Mar")
+            bulan="03"
+            ;;
+        "Apr")
+            bulan="04"
+            ;;
+        "May")
+            bulan="05"
+            ;;
+        "Jun")
+            bulan="06"
+            ;;
+        "Jul")
+            bulan="07"
+            ;;
+        "Aug")
+            bulan="08"
+            ;;
+        "Sep")
+            bulan="09"
+            ;;
+        "Oct")
+            bulan="10"
+            ;;
+        "Nov")
+            bulan="11"
+            ;;
+        "Dec")
+            bulan="12"
+            ;;
+        *)
+            continue
+    esac
+
+
+date --set $tahun.$bulan.$hari-$waktu
