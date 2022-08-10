@@ -13,6 +13,6 @@ wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/syncd
 
 - lalu masukkan command ini di Luci, masukkan di system>startup>local startup ,atau jika di terminal di rc.local
 
-/usr/bin/rekonekusbtether
+/usr/bin/syncdate-hp
 
 - pastikan command diatas di letakkan di atas tulisan exit 0
