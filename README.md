@@ -10,3 +10,9 @@ Auto sync date openwrt with pick date data from modem hp
 - Paste command ini di terminal openwrt anda
 
 wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/syncdate-openwrt-for-modemhp/main/syncdate-hp" -O /usr/bin/syncdate-hp && chmod +x /usr/bin/syncdate-hp
+
+- lalu masukkan command ini di Luci, masukkan di system>startup>local startup ,atau jika di terminal di rc.local
+
+/usr/bin/rekonekusbtether
+
+- pastikan command diatas di letakkan di atas tulisan exit 0
