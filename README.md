@@ -1,6 +1,7 @@
 # syncdate-openwrt-for-modemhp
 Auto sync date openwrt with pick date data from modem hp
 
+- script ini khusus digunakan untuk modem hp,selain modem hp tidak bisa !
 - Sebagian source didapat dari @Teguh Surya Mungaran(silahkan bisa kunjungi FB nya)
 
 - Jangan lupa install dahulu adb di openwrt
