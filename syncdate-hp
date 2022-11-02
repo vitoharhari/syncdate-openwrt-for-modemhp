@@ -1,4 +1,5 @@
 #!/bin/bash
+adb shell date
 adb shell date > /root/hasildate
 
 hari=$(cat /root/hasildate | cut -b 9-10)
