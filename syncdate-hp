@@ -46,6 +46,38 @@ waktu=$(cat /root/hasildate | cut -b 12-19)
         *)
             continue
     esac
+    
+    case $hari in
+        " 1")
+            hari="01"
+            ;;
+        " 2")
+            hari="02"
+            ;;
+        " 3")
+            hari="03"
+            ;;
+        " 4")
+            hari="04"
+            ;;
+        " 5")
+            hari="05"
+            ;;
+        " 6")
+            hari="06"
+            ;;
+        " 7")
+            hari="07"
+            ;;
+        " 8")
+            hari="08"
+            ;;
+        " 9")
+            hari="09"
+            ;;
+        *)
+            continue
+    esac
 
 
-date --set $tahun.$bulan.$hari-$waktu
+date -s $tahun.$bulan.$hari-$waktu
